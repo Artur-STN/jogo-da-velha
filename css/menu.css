@@ -1,0 +1,114 @@
+#menu {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
+    
+    background: #577590;
+
+    width: 100vw;
+    min-height: 100vh;
+
+    padding: 13rem 0;
+    
+    position: fixed;
+    top: 0;
+
+}
+
+#menu p {
+    
+    color: white;
+
+    font-family: "Fredoka One";
+    font-size: 5rem;
+    
+    text-align: center;
+    text-shadow: 0 0 5px black;
+
+    width: 100vw;
+
+    padding: 1rem 0;
+
+}
+
+#menu .buttons {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 40vw;
+
+}
+
+#menu .buttons button {
+
+    font-family: "Fredoka One";
+
+    font-size: 6rem;
+    
+    width: 150px;
+    height: 150px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+#menu .buttons button:nth-child(1) {
+
+    background: #43AA8B;
+    color: white;
+
+    border: 1px solid #43AA8B;
+
+}
+
+#menu .buttons button:nth-child(1):hover {
+
+    background: #368A71;
+
+    font-size: 7rem;
+
+    box-shadow: 0 0 5px black;
+
+    text-shadow: 0 0 5px black;
+
+}
+
+#menu .buttons button:nth-child(2) {
+
+    background: #F94144;
+    color: white;
+
+    border: 1px solid #F94144;
+
+}
+
+#menu .buttons button:nth-child(2):hover {
+
+    background: #BD3033;
+
+    font-size: 7rem;
+
+    box-shadow: 0 0 5px black;
+
+    text-shadow: 0 0 5px black;
+
+}
+
+@media(max-width: 720px) {
+
+    #menu .buttons {
+
+        width: 75vw;
+    
+    }
+
+}

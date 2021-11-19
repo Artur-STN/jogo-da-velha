@@ -2,45 +2,65 @@
 
 <html lang="pt-br">
 
-<head>
+    <head>
 
-    <meta charset="UTF-8">
+        <meta charset="UTF-8">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- LINK GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap" rel="stylesheet">
+        <!-- LINK FAVICON -->
+        <link rel="shortcut icon" href="assets/imagem.png" type="image/x-icon">
 
-    <!-- LINK CSS -->
-    <link rel="stylesheet" href="css/style.css">
+        <!-- LINK GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap" rel="stylesheet">
 
-    <!-- LINK JS -->
-    <script src="js/main.js"></script>
-    
-    <title>Jogo da Velha</title>
+        <!-- LINK CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/menu.css">
 
-</head>
+        <!-- LINK JS -->
+        <script src="js/main.js"></script>
+        
+        <title>Jogo da Velha</title>
 
-<body>
+    </head>
 
-    <div class="container">
+    <body>
 
-        <div onclick="insertLetter('divNumber1')" id="divNumber1"></div>
-        <div onclick="insertLetter('divNumber2')" id="divNumber2"></div>
-        <div onclick="insertLetter('divNumber3')" id="divNumber3"></div>
-        <div onclick="insertLetter('divNumber4')" id="divNumber4"></div>
-        <div onclick="insertLetter('divNumber5')" id="divNumber5"></div>
-        <div onclick="insertLetter('divNumber6')" id="divNumber6"></div>
-        <div onclick="insertLetter('divNumber7')" id="divNumber7"></div>
-        <div onclick="insertLetter('divNumber8')" id="divNumber8"></div>
-        <div onclick="insertLetter('divNumber9')" id="divNumber9"></div>
+        <div id="menu">
 
-    </div>
-    
-</body>
+            <p>Escolha</p>
+            
+            <div class="buttons">
+            
+                <button onclick="closeMenu('X')">X</button>
+            
+                <button onclick="closeMenu('O')">O</button>
+            
+            </div>
+
+        </div>
+
+        <div class="container">
+
+            <div onclick="insertLetter('divNumber1')" id="divNumber1"></div>
+            <div onclick="insertLetter('divNumber2')" id="divNumber2"></div>
+            <div onclick="insertLetter('divNumber3')" id="divNumber3"></div>
+            <div onclick="insertLetter('divNumber4')" id="divNumber4"></div>
+            <div onclick="insertLetter('divNumber5')" id="divNumber5"></div>
+            <div onclick="insertLetter('divNumber6')" id="divNumber6"></div>
+            <div onclick="insertLetter('divNumber7')" id="divNumber7"></div>
+            <div onclick="insertLetter('divNumber8')" id="divNumber8"></div>
+            <div onclick="insertLetter('divNumber9')" id="divNumber9"></div>
+
+        </div>
+
+        <button onclick="newGame()" class="buttonNewGame">Novo Jogo</button>
+        
+    </body>
 
 </html>
