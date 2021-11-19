@@ -67,6 +67,6 @@ function newGame() {
 
     let menu = document.getElementById("menu")
 
-    // menu.style.left = "0"
+    menu.style.left = "0"
 
 }
