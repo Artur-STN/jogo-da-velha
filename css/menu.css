@@ -1,4 +1,4 @@
-#menu {
+.menu {
 
     display: flex;
     align-items: center;
@@ -12,9 +12,23 @@
     min-height: 100vh;
 
     padding: 13rem 0;
+
+    transition: 1s;
     
     position: fixed;
     top: 0;
+
+}
+
+.menu.aberto {
+
+    left: 0;
+
+}
+
+.menu.fechado {
+
+    left: -100vw;
 
 }
 

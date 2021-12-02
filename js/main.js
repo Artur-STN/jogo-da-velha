@@ -3,11 +3,14 @@ var jogadorDois;
 
 var vez;
 
+var blocos = []
+
 function closeMenu(opçãoEscolhida) {
 
     let menu = document.getElementById("menu")
 
-    menu.style.left = "-100vw"
+    menu.classList.remove("aberto")
+    menu.classList.add("fechado")
 
     jogadorUm = opçãoEscolhida
 
@@ -27,7 +30,9 @@ function closeMenu(opçãoEscolhida) {
 
 function insertLetter(divId) {
 
-    let div = document.getElementById(divId)
+    let div = document.getElementById(`divNumber${divId}`)
+
+    blocos.push(divId)
 
     if (vez == "jogadorUm") {
 
@@ -49,6 +54,12 @@ function insertLetter(divId) {
     div.style.border = "1px solid white"
     div.style.borderRadius = "10px"
 
+    if (blocos.length >= 3) {
+
+        verificaGanhador()
+        
+    }
+
 }
 
 function newGame() {
@@ -67,6 +78,13 @@ function newGame() {
 
     let menu = document.getElementById("menu")
 
-    menu.style.left = "0"
+    menu.classList.add("aberto")
+    menu.classList.remove("fechado")
+
+}
+
+function verificaGanhador() {
+    
+    
 
 }

@@ -21,6 +21,7 @@
         <!-- LINK CSS -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/menuParabens.css">
 
         <!-- LINK JS -->
         <script src="js/main.js"></script>
@@ -31,7 +32,7 @@
 
     <body>
 
-        <div id="menu">
+        <div class="menu aberto" id="menu">
 
             <p>Escolha</p>
             
@@ -47,19 +48,27 @@
 
         <div class="container">
 
-            <div onclick="insertLetter('divNumber1')" id="divNumber1"></div>
-            <div onclick="insertLetter('divNumber2')" id="divNumber2"></div>
-            <div onclick="insertLetter('divNumber3')" id="divNumber3"></div>
-            <div onclick="insertLetter('divNumber4')" id="divNumber4"></div>
-            <div onclick="insertLetter('divNumber5')" id="divNumber5"></div>
-            <div onclick="insertLetter('divNumber6')" id="divNumber6"></div>
-            <div onclick="insertLetter('divNumber7')" id="divNumber7"></div>
-            <div onclick="insertLetter('divNumber8')" id="divNumber8"></div>
-            <div onclick="insertLetter('divNumber9')" id="divNumber9"></div>
+            <div onclick="insertLetter('1')" id="divNumber1"></div>
+            <div onclick="insertLetter('2')" id="divNumber2"></div>
+            <div onclick="insertLetter('3')" id="divNumber3"></div>
+            <div onclick="insertLetter('4')" id="divNumber4"></div>
+            <div onclick="insertLetter('5')" id="divNumber5"></div>
+            <div onclick="insertLetter('6')" id="divNumber6"></div>
+            <div onclick="insertLetter('7')" id="divNumber7"></div>
+            <div onclick="insertLetter('8')" id="divNumber8"></div>
+            <div onclick="insertLetter('9')" id="divNumber9"></div>
 
         </div>
 
         <button onclick="newGame()" class="buttonNewGame">Novo Jogo</button>
+
+        <div id="menuParabens">
+
+            <p>PARABÉNS</p>
+            <p class="ganhodor" id="ganhador">-</p>
+            <p>GANHOU</p>
+
+        </div>
         
     </body>
 

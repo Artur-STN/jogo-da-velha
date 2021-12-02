@@ -1,0 +1,69 @@
+#menuParabens {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
+    
+    background: #577590;
+
+    width: 100vw;
+    min-height: 100vh;
+
+    padding: 13rem 0;
+    
+    position: fixed;
+    top: 0;
+    right: -100vw;
+
+}
+
+#menuParabens p {
+    
+    color: white;
+
+    font-family: "Fredoka One";
+    font-size: 5rem;
+    
+    text-align: center;
+    text-shadow: 0 0 5px black;
+
+    padding: 1rem 0;
+
+}
+
+.ganhodor {
+
+    font-family: "Fredoka One";
+    font-size: 6rem;
+    
+    border-radius: 10px;
+    
+    box-shadow: 0 0 5px black;
+    
+    text-shadow: 0 0 5px black;
+    
+    width: 150px;
+    height: 150px;
+    
+    transition: 0.2s;
+}
+
+.ganhodor.x {
+
+    background: #43AA8B;
+    color: white;
+
+    border: 1px solid #43AA8B;
+
+}
+
+.ganhodor.o {
+
+    background: #F94144;
+    color: white;
+
+    border: 1px solid #F94144;
+
+}
