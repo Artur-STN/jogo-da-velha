@@ -46,7 +46,7 @@
 
 }
 
-.ganhodor {
+.ganhador {
 
     font-family: "Fredoka One";
     font-size: 6rem;
@@ -57,13 +57,13 @@
     
     text-shadow: 0 0 5px black;
     
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
     
     transition: 0.2s;
 }
 
-.ganhodor.x {
+p.ganhador.letraX {
 
     background: #43AA8B;
     color: white;
@@ -72,7 +72,7 @@
 
 }
 
-.ganhodor.o {
+p.ganhador.letraO {
 
     background: #F94144;
     color: white;
@@ -81,11 +81,11 @@
 
 }
 
-@media(max-width: 720px) {
+@media(max-width: 540px) {
 
     .menuParabens p {
 
-        font-size: 2rem;
+        font-size: 2.5rem;
 
     }
 

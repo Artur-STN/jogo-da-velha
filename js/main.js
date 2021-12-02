@@ -80,50 +80,157 @@ function verificaGanhador() {
 
     let menuParabens = document.getElementById('menuParabens')
 
-    if (d1 == d2 && d1 == d3 && d2 == d3) {
+    if (d1 == d2 && d1 == d3 && d2 == d3 && d1 != "" && d2 != "" && d3 != "") {
 
         menuParabens.classList.remove('fechado')
         menuParabens.classList.add('aberto')
 
         if (d1 == "X") {
             
-            p.classList.add("X")
+            p.classList.remove("letraO")
+            p.classList.add("letraX")
 
         } else if (d1 == "O") {
 
-            p.classList.add("O")
+            p.classList.remove("letraX")
+            p.classList.add("letraO")
 
         }
 
-        console.log(d1, d1, d3)
+        p.innerText = d1
 
-    } else if (d1 == d2 && d1 == d3 && d2 == d3) {
+    } else if (d4 == d5 && d4 == d6 && d5 == d6 && d4 != "" && d5 != "" && d6 != "") {
 
+        menuParabens.classList.remove('fechado')
+        menuParabens.classList.add('aberto')
 
+        if (d4 == "X") {
+            
+            p.classList.remove("letraO")
+            p.classList.add("letraX")
 
-    } else if (d1 == d2 && d1 == d3 && d2 == d3) {
+        } else if (d4 == "O") {
 
+            p.classList.remove("letraX")
+            p.classList.add("letraO")
 
+        }
 
-    } else if (d1 == d2 && d1 == d3 && d2 == d3) {
+        p.innerText = d4
 
+    } else if (d7 == d8 && d7 == d9 && d8 == d9 && d7 != "" && d8 != "" && d9 != "") {
 
+        menuParabens.classList.remove('fechado')
+        menuParabens.classList.add('aberto')
 
-    } else if (d1 == d2 && d1 == d3 && d2 == d3) {
+        if (d7 == "X") {
+            
+            p.classList.remove("letraO")
+            p.classList.add("letraX")
 
+        } else if (d7 == "O") {
 
+            p.classList.remove("letraX")
+            p.classList.add("letraO")
 
-    } else if (d1 == d2 && d1 == d3 && d2 == d3) {
+        }
 
+        p.innerText = d7
 
+    } else if (d1 == d4 && d1 == d7 && d4 == d7 && d1 != "" && d4 != "" && d7 != "") {
 
-    } else if (d1 == d2 && d1 == d3 && d2 == d3) {
+        menuParabens.classList.remove('fechado')
+        menuParabens.classList.add('aberto')
 
+        if (d1 == "X") {
+            
+            p.classList.remove("letraO")
+            p.classList.add("letraX")
 
+        } else if (d1 == "O") {
 
-    } else if (d1 == d2 && d1 == d3 && d2 == d3) {
+            p.classList.remove("letraX")
+            p.classList.add("letraO")
 
+        }
 
+        p.innerText = d1
+
+    } else if (d2 == d5 && d2 == d8 && d5 == d8 && d2 != "" && d5 != "" && d8 != "") {
+
+        menuParabens.classList.remove('fechado')
+        menuParabens.classList.add('aberto')
+
+        if (d2 == "X") {
+            
+            p.classList.remove("letraO")
+            p.classList.add("letraX")
+
+        } else if (d2 == "O") {
+
+            p.classList.remove("letraX")
+            p.classList.add("letraO")
+
+        }
+
+        p.innerText = d2
+
+    } else if (d3 == d6 && d3 == d9 && d6 == d9 && d3 != "" && d6 != "" && d9 != "") {
+
+        menuParabens.classList.remove('fechado')
+        menuParabens.classList.add('aberto')
+
+        if (d3 == "X") {
+            
+            p.classList.remove("letraO")
+            p.classList.add("letraX")
+
+        } else if (d3 == "O") {
+
+            p.classList.remove("letraX")
+            p.classList.add("letraO")
+
+        }
+
+        p.innerText = d3
+
+    } else if (d1 == d5 && d1 == d9 && d5 == d9 && d1 != "" && d5 != "" && d9 != "") {
+
+        menuParabens.classList.remove('fechado')
+        menuParabens.classList.add('aberto')
+
+        if (d1 == "X") {
+            
+            p.classList.remove("letraO")
+            p.classList.add("letraX")
+
+        } else if (d1 == "O") {
+
+            p.classList.remove("letraX")
+            p.classList.add("letraO")
+
+        }
+
+        p.innerText = d1
+
+    } else if (d3 == d5 && d3 == d7 && d5 == d7 && d3 != "" && d5 != "" && d7 != "") {
+
+        menuParabens.classList.remove('fechado')
+        menuParabens.classList.add('aberto')
+
+        if (d3 == "X") {
+            
+            p.classList.remove("letraO")
+            p.classList.add("letraX")
+
+        } else if (d3 == "O") {
+
+            p.classList.remove("letraX")
+            p.classList.add("letraO")
+
+        }
+
+        p.innerText = d3
 
     }
 

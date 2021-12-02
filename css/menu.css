@@ -121,9 +121,18 @@
 
 @media(max-width: 720px) {
 
+    #menu {
+
+        padding: 5rem 0;
+
+    }
+
     #menu .buttons {
 
+        flex-direction: column;
+        
         width: 75vw;
+        height: 350px;
     
     }
 
