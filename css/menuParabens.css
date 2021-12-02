@@ -1,4 +1,4 @@
-#menuParabens {
+.menuParabens {
 
     display: flex;
     align-items: center;
@@ -15,11 +15,24 @@
     
     position: fixed;
     top: 0;
-    right: -100vw;
+
+    transition: 1s;
 
 }
 
-#menuParabens p {
+.menuParabens.aberto {
+
+    right: 0;
+
+}
+
+.menuParabens.fechado {
+
+    right: -150vw;
+
+}
+
+.menuParabens p {
     
     color: white;
 
@@ -65,5 +78,22 @@
     color: white;
 
     border: 1px solid #F94144;
+
+}
+
+@media(max-width: 720px) {
+
+    .menuParabens p {
+
+        font-size: 2rem;
+
+    }
+
+    .ganhodor {
+
+        width: 70px;
+        height: 70px;
+
+    }
 
 }
